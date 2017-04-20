@@ -16,15 +16,32 @@ module.exports = function(config) {
       '**/*.spec.js'
     ],
 
-    autoWatch: true,
+    singleRun: true,
+
+    autoWatch: false,
 
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome', 'Firefox'],
+    reporters: ['progress', 'coverage'],
+
+    preprocessors: {
+      '!(bower_components)/**/*.js': ['coverage']
+    },
+
+    browsers: ['PhantomJS'],
+
+    coverageReporter: {
+      reporters: [
+        {type: "html", dir: "../", subdir:"reports/coverage/"},
+        {type: "lcov", dir: "../", subdir:"reports/coverage/"},
+        {type: "cobertura", dir: "../", subdir:"reports/coverage/"},
+        {type: "text-summary"}
+      ]
+    },
 
     plugins: [
-      'karma-chrome-launcher',
-      'karma-firefox-launcher',
+      'karma-phantomjs-launcher',
+      'karma-coverage',
       'karma-jasmine'
     ]
 
