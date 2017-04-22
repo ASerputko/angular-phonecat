@@ -27,8 +27,8 @@ describe('phoneDetailNew', function() {
 
       expect(ctrl.phone).toEqual({});
 
-      // $httpBackend.flush();
-      // expect(ctrl.phone).toEqual(xyzPhoneData);
+      $httpBackend.flush();
+      expect(ctrl.phone).toEqual(xyzPhoneData);
     });
 
   });
