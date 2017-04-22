@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.aserputko</groupId>
+    <artifactId>angular-phonecat</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <properties>
+        <sonar.projectKey>angular-phonecat</sonar.projectKey>
+        <sonar.projectName>angular phonecat</sonar.projectName>
+        <sonar.projectVersion>1.0.0</sonar.projectVersion>
+        <sonar.sources>app</sonar.sources>
+        <sonar.exclusions>app/bower_components/**/*,**/*.spec.js,**/*.protractor.js</sonar.exclusions>
+        <sonar.language>js</sonar.language>
+        <sonar.javascript.lcov.reportPath>reports/coverage/lcov.info</sonar.javascript.lcov.reportPath>
+    </properties>
+</project>
