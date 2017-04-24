@@ -11,7 +11,7 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-mocks/angular-mocks.js',
       '**/*.module.js',
-      '*!(.module|.spec).js',
+      '*.js',
       '!(bower_components)/**/*!(.module|.spec).js',
       '**/*.spec.js'
     ],
@@ -25,6 +25,7 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
+      '*.js': ['coverage'],
       '!(bower_components)/**/*.js': ['coverage']
     },
 
