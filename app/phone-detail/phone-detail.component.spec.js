@@ -22,7 +22,7 @@ describe('phoneDetail', function() {
       ctrl = $componentController('phoneDetail');
     }));
 
-    it('should fetch the phone details', function() {
+    xit('should fetch the phone details', function() {
       jasmine.addCustomEqualityTester(angular.equals);
 
       expect(ctrl.phone).toEqual({});
