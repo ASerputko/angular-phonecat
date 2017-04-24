@@ -3,7 +3,7 @@
 // Register `phoneDetail` component, along with its associated controller and template
 angular.
   module('phoneDetail').
-  component('phoneDetailNew', {
+  component('phoneDetail2', {
     templateUrl: 'phone-detail/phone-detail.template.html',
     controller: ['$routeParams', 'Phone',
       function PhoneDetailController($routeParams, Phone) {
