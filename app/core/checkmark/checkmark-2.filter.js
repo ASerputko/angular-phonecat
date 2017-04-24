@@ -2,7 +2,7 @@
 
 angular.
   module('core').
-  filter('checkmark', function() {
+  filter('checkmark1', function() {
     return function(input) {
       return input ? '\u2713' : '\u2718';
     };
