@@ -13,7 +13,7 @@ module.exports = function(config) {
       '**/*.module.js',
       '*!(.module|.spec).js',
       '!(bower_components)/**/*!(.module|.spec).js',
-      '**/*.spec.js'
+      '!**/*.spec.js'
     ],
 
     singleRun: true,
@@ -25,7 +25,7 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      '!(bower_components)/**/*.js': ['coverage']
+      '!(bower_components)/**/!(*.module|*.spec).js': ['coverage']
     },
 
     browsers: ['PhantomJS'],

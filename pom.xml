@@ -6,8 +6,8 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
     <properties>
-        <sonar.projectKey>angular-phonecat</sonar.projectKey>
-        <sonar.projectName>angular phonecat</sonar.projectName>
+        <sonar.projectKey>angular-phonecat-case-01</sonar.projectKey>
+        <sonar.projectName>angular phonecat case 01</sonar.projectName>
         <sonar.projectVersion>1.0.0</sonar.projectVersion>
         <sonar.sources>app</sonar.sources>
         <sonar.exclusions>app/bower_components/**/*,**/*.spec.js,**/*.protractor.js</sonar.exclusions>
