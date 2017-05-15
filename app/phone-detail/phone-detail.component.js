@@ -15,6 +15,10 @@ angular.
         self.setImage = function setImage(imageUrl) {
           self.mainImageUrl = imageUrl;
         };
+
+        self.setImage2 = function setImage(imageUrl) {
+          self.mainImageUrl = imageUrl;
+        };
       }
     ]
   });
